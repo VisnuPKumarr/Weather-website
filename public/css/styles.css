@@ -2,7 +2,7 @@
     color: rgb(94, 4, 146);
 }*/
 img{
-    height: 250px !important;
+    height: 250px;
     width: 400px;
     margin-bottom: 16px;
 }
@@ -62,4 +62,9 @@ button {
     background: #888888;
     color: white;
     padding: 8px;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
 }
