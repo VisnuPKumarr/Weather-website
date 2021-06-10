@@ -47,13 +47,14 @@ header a {
 }
 
 .potrait {
-    height: 400px;
-    width: 600px;
+    height: 300px;
+    width: 640px;
 }
 
 input {
     border: 1px solid #cccccc;
-    padding: 8px;
+    padding: 18px;
+    font-size: 20px;
 }
 
 button {
@@ -61,7 +62,8 @@ button {
     border: 1px solid #888888;
     background: #888888;
     color: white;
-    padding: 8px;
+    padding: 18px;
+    font-size: 20px;
 }
 
 .logo1 {
@@ -77,4 +79,14 @@ button {
 .logo3 {
     width: 30px;
     height: 30px;
+}
+
+#message-2{
+    font-size: 20px;
+    white-space: pre-line;
+}
+
+#message-1{
+    font-size: 20px;
+    white-space: pre-line;
 }

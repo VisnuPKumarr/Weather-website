@@ -11,9 +11,16 @@ const forecast = (latitude, longitude, callback) =>{
             callback("Unable to find location", undefined)
         }
         else{
-            callback(undefined, body.current.weather_descriptions[0] + ". \nIt is currently " + body.current.temperature + 
-        " degrees out. \nIt feels like "+ body.current.feelslike + 
-        " degrees out.")
+            callback(undefined, "Current weather: " + body.current.weather_descriptions[0] + 
+                ". \n\nIt is currently " + body.current.temperature + 
+        " degrees out. \nCurrent precipitation level is " + body.current.precip + 
+        "mm/hr. \nCurrent humidity is " + body.current.humidity + 
+        "%. \nCloud cover is " + body.current.cloudcover + 
+        "%. \nWind is currently blowing at "+ body.current.wind_speed + 
+        " kmph towards " + body.current.wind_dir + " (" + body.current.wind_degree + 
+        " degrees) direction. \nIt feels like "+ body.current.feelslike + 
+        " degrees out. \nAir pressure is currently " + body.current.pressure + 
+        "MB. \nCurrent UV-index is " + body.current.uv_index)
         }
     })
 }
