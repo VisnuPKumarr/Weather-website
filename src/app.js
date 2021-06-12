@@ -30,6 +30,13 @@ app.get('', (req, res) => {
     })
 })
 
+app.get('/coordinates', (req, res) => {
+    res.render('coordinates', {
+        title: 'Coordinates',
+        name: 'Visnu P Kumarr'
+    })
+})
+
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'Me',
@@ -91,7 +98,23 @@ app.get('/weather', (req, res) => {
     //     Location: 'Cherthala',
     //     address: req.query.address
     // })
-
+app.get('/location', (req, res) => {
+    if(!req.query.address) {
+        return res.send({
+            error: 'You must provide an address'
+        })
+    }
+    geocode(req.query.address,( error, {latitude, longitude, location} = {}) => {
+        if(error){
+            return res.send({error})
+        }
+        res.send({
+            location,
+            latitude,
+            longitude
+        })
+    })
+})
 
 app.get('/products', (req, res) => {
     if(!req.query.search) {

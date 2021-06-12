@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>Weather</title>
+    <title>Coordinates</title>
     <!-- <link rel="stylesheet" href="./css/styles.css"> -->
     <!-- <link rel="stylesheet" href="css/styles.css"> -->
     <link rel="stylesheet" href="/css/styles.css">
@@ -14,16 +14,16 @@
     <div class="main-content">
         {{>header}}
         <img class = "potrait" src="img/pic.jpg">
-        <p>Website to determine the weather conditions at a location. Please enter the location in the search bar.</p>
-        <form id = "form-weather">
-            <input id = "input-weather"placeholder="Location">
-            <button>Search</button>
+        <p>Website to determine the geographic coordinates of a location. Please enter the location in the search bar.</p>
+        <form id="form-coordinates">
+            <input id="input-coordinates" placeholder="Location">
+            <button>Find</button>
         </form>
-        <p id = "message-1"></p>
-        <p id = "message-2"></p>
+        <p id = "message-3"></p>
+        <p id = "message-4"></p>
     </div>
     {{>footer}}
-    <script src="js/app.js"></script>
+    <script src="js/app-coordinates.js"></script>
 </body>
 
 </html>
