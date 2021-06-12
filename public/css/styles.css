@@ -52,14 +52,14 @@ header a {
 }
 
 input {
-    border: 5px solid #cccccc;
+    border: 5px solid #888888;
     padding: 18px;
     font-size: 20px;
 }
 
 button {
     cursor: pointer;
-    border: 5px solid #888888;
+    border: 5px solid #444444;
     background: #888888;
     color: white;
     padding: 18px;
